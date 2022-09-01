@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/redy_anl/static/css/main.29261fe0.css",
+    "main.js": "/redy_anl/static/js/main.fe35042a.js",
+    "index.html": "/redy_anl/index.html",
+    "main.29261fe0.css.map": "/redy_anl/static/css/main.29261fe0.css.map",
+    "main.fe35042a.js.map": "/redy_anl/static/js/main.fe35042a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29261fe0.css",
+    "static/js/main.fe35042a.js"
+  ]
+}
