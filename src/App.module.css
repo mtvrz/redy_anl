@@ -7,54 +7,114 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: gray;
+  background: linear-gradient(115deg, #ffff 75%, #c21a17 75.1%);
+}
+.container{
+  position: relative;
+  width: 50%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 0.3em;
+}
+.appcont{
+  position: relative;
+  margin: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
 }
 .ContTxt{
   position: relative;
-  margin: 20px;
-  width: 40%;
-  height: 50px;
+  margin: 10px;
+  width: 100%;
+  height: 100px;
+  border-radius: 0.9em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .txt{
   position: relative;
+  border-radius: 0.5em;
   width: 100%;
   height: 100%;
   text-align: center;
-  font-size: larger;
+  font-size: xx-large;
   border: none;
-  background: ghostwhite;
+  background: #f0f0f0;
 }
 
 .combac{
   position: absolute;
-  top: 1px;
+  top: 30px;
   left: 1px;
-  width: 60px;
-  height: 50px;
+  width: 100px;
+  height: 40px;
   z-index: 100;
   border: none;
   text-align: center;
   font-size: medium;
-  background: ghostwhite;
+  background: transparent;
+  font-weight: normal;
+  font-size: medium;
 }
 
 .button{
   position: relative;
   margin-top: 30px;
-width: 20%;
+  width: 47.5%;
   height: 50px;
-  font-size: large;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color:#ebebeb ;
+  border-radius: 0.5em;
+  font-size: larger;
+  font-weight: lighter;
   border: none;
   transition: 0.2s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: ghostwhite;
+}
+
+.button:disabled{
+  cursor: default;
+  background-color: rgba(172, 167, 167, 0.54);
+}
+.button:disabled:hover{
+  cursor: default;
+  background-color: #cfcece;
+  color: #b0b0b0;
 }
 .button:hover{
   cursor: pointer;
-  background: darkgray;
+  background: #c21a17;
+  color: #f0f0f0;
+  transform: scale(1.04);
+  font-weight: bold;
 }
-.button:disabled{
-  cursor: default;
-  background: ghostwhite;
+.buttonEnv{
+  position: relative;
+  width: 47.5%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color:#ebebeb ;
+  border-radius: 0.5em;
+  font-size: larger;
+  font-weight: lighter;
+  border: none;
+  transition: 0.2s;
+}
+.buttonEnvActive{
+  background-color: #c21a17;
+  color: #f0f0f0;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.buttonEnv:hover{
+  cursor: pointer;
+  transform: scale(1.04);
 }
