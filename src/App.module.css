@@ -9,6 +9,25 @@
   flex-direction: column;
   background: linear-gradient(115deg, #ffffff 75%, #c21a17 75.1%);
 }
+.lisa{
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  left: 0%;
+  top: 50%;
+z-index: 2;
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lisa img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.7;
+}
+
 .container{
   position: relative;
   width: 50%;
@@ -33,6 +52,11 @@
   justify-content: center;
   gap: 5%;
 }
+.appcont sup{
+  font-size: 13px;
+  font-weight: bold;
+  color: #505050;
+}
 .ContTxt{
   position: relative;
   margin: 10px;
@@ -42,12 +66,13 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .txt{
+  z-index: 3;
   position: relative;
   border-radius: 0.5em;
   width: 100%;
   height: 100%;
   text-align: center;
-  font-size: xx-large;
+  font-size: larger;
   border: none;
   background: #f0f0f0;
 }
@@ -68,6 +93,7 @@
 }
 
 .button{
+  z-index: 3;
   position: relative;
   margin-top: 30px;
   width: 47.5%;
@@ -98,6 +124,7 @@
   font-weight: bold;
 }
 .buttonEnv{
+  z-index: 3;
   position: relative;
   width: 47.5%;
   height: 100%;
@@ -114,6 +141,9 @@
   color: #f0f0f0;
   font-weight: bold;
   transition: 0.2s;
+}
+.buttonEnvActive sup{
+  color: #f0f0f0;
 }
 .buttonEnv:hover{
   cursor: pointer;
